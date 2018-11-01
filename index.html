@@ -1,41 +1,67 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!doctype html5>
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <h1>A simple HTML5 form with tabs</h1>
+    <header>
+        <nav class="form-tab-menu">
+            <ul>
+                <li data-name="tab-1" class="active" onclick="activeThisTab(this)">
+                    tab 1
+                </li>
+                <li data-name="tab-2" onclick="activeThisTab(this)">
+                    tab 2
+                </li>
+                <li data-name="tab-3" onclick="activeThisTab(this)">
+                    tab 3
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form class="form-tab" data-active-tab="tab-1">
 
-    <!-- Add your site or application content here -->
-    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+        <div id="tab-1" class="form-tab-item">
+            <h2>tab 1</h2>
+            <label>input 1</label>
+            <input type="text">
+            <label>input 2</label>
+            <input type="text">
+            <label>input 3</label>
+            <input type="text">
+            <label>input 4</label>
+            <input type="text">
+        </div>
+        <div id="tab-2" class="form-tab-item">
+            <h2>tab 2</h2>
+            <label>input 1</label>
+            <input type="text">
+            <label>input 2</label>
+            <input type="text">
+            <label>input 3</label>
+            <input type="text">
+            <label>input 4</label>
+            <input type="text">
+        </div>
+        <div id="tab-3" class="form-tab-item">
+            <h2>tab 3</h2>
+            <label>input 1</label>
+            <input type="text">
+            <label>input 2</label>
+            <input type="text">
+            <label>input 3</label>
+            <input type="text">
+            <label>input 4</label>
+            <input type="text">
+        </div>
+        <button>Submit</button>
+    </form>
+
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function() {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
