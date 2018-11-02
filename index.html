@@ -8,58 +8,61 @@
 
 <body>
     <h1>A simple HTML5 form with tabs</h1>
-    <header>
-        <nav class="form-tab-menu">
-            <ul>
-                <li data-name="tab-1" class="active" onclick="activeThisTab(this)">
-                    tab 1
-                </li>
-                <li data-name="tab-2" onclick="activeThisTab(this)">
-                    tab 2
-                </li>
-                <li data-name="tab-3" onclick="activeThisTab(this)">
-                    tab 3
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <form class="form-tab" data-active-tab="tab-1">
+    <div class="form-tab">
+        <header>
+            <nav class="form-tab-menu">
+                <ul>
+                    <li data-name="tab-1" class="active" onclick="activeThisTab(this)">
+                        tab 1
+                    </li>
+                    <li data-name="tab-2" onclick="activeThisTab(this)">
+                        tab 2
+                    </li>
+                    <li data-name="tab-3" onclick="activeThisTab(this)">
+                        tab 3
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <form data-active-tab="tab-1">
 
-        <div id="tab-1" class="form-tab-item">
-            <h2>tab 1</h2>
-            <label>input 1</label>
-            <input type="text">
-            <label>input 2</label>
-            <input type="text">
-            <label>input 3</label>
-            <input type="text">
-            <label>input 4</label>
-            <input type="text">
-        </div>
-        <div id="tab-2" class="form-tab-item">
-            <h2>tab 2</h2>
-            <label>input 1</label>
-            <input type="text">
-            <label>input 2</label>
-            <input type="text">
-            <label>input 3</label>
-            <input type="text">
-            <label>input 4</label>
-            <input type="text">
-        </div>
-        <div id="tab-3" class="form-tab-item">
-            <h2>tab 3</h2>
-            <label>input 1</label>
-            <input type="text">
-            <label>input 2</label>
-            <input type="text">
-            <label>input 3</label>
-            <input type="text">
-            <label>input 4</label>
-            <input type="text">
-        </div>
-        <button>Submit</button>
-    </form>
+            <div id="tab-1" class="form-tab-item">
+                <h2>tab 1</h2>
+                <label>input 1</label>
+                <input type="text">
+                <label>input 2</label>
+                <input type="text">
+                <label>input 3</label>
+                <input type="text">
+                <label>input 4</label>
+                <input type="text">
+            </div>
+            <div id="tab-2" class="form-tab-item">
+                <h2>tab 2</h2>
+                <label>input 1</label>
+                <input type="text">
+                <label>input 2</label>
+                <input type="text">
+                <label>input 3</label>
+                <input type="text">
+                <label>input 4</label>
+                <input type="text">
+            </div>
+            <div id="tab-3" class="form-tab-item">
+                <h2>tab 3</h2>
+                <label>input 1</label>
+                <input type="text">
+                <label>input 2</label>
+                <input type="text">
+                <label>input 3</label>
+                <input type="text">
+                <label>input 4</label>
+                <input type="text">
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
 
     <script src="js/main.js"></script>
 </body>

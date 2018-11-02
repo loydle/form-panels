@@ -1,4 +1,4 @@
-   const form = document.querySelector('form.form-tab');
+   const form = document.querySelector('.form-tab form');
    const tabs = document.querySelectorAll('.form-tab-item');
    const activeTab = getActiveTab;
    renderActiveTab();
