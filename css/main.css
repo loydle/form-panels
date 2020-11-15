@@ -1,17 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
+    font-size: 62.5%;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-family: Helvetica, sans-serif;
     background-color: #6B5B95;
+    padding: 5% 20%;
 }
 
 h1 {
     color: #fff;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 3rem;
 }
 
 h1,
@@ -19,67 +19,55 @@ h2 {
     text-align: center;
 }
 
-.form-tab form {
-    top: -4px;
-    position: absolute;
-    width: 80%;
-    margin: auto auto;
+form {
     background-color: #fff;
     border-radius: 4px;
     padding: 12px;
-    position: relative;
 }
 
-.form-tab form button {
-    padding: 4px;
+form button {
+    padding: 12px;
     width: 100%;
     background-color: #353a7b;
+    border: none;
+    border-radius: 4px;
     color: #fff;
-    outline: none;
-    font-size: 22px;
+    font-size: 2.4rem;
 }
 
-.form-tab header {
-    list-style-type: none;
-    margin: auto auto;
-    width: 80%;
-}
-
-.form-tab-menu ul {
+header ul {
+    width: 100%;
+    margin: 0;
     display: flex;
     list-style-type: none;
 }
 
-.form-tab-menu li {
+header ul li {
     padding: 12px;
-    border-radius: 4px;
-    background-color: #c7c5da;
     margin-left: 12px;
+    background-color: #c7c5da;
 }
 
-.form-tab-menu li.active,
-.form-tab-menu li:hover {
+header ul li.active,
+header ul li:hover {
     background-color: #fff;
     cursor: pointer;
 }
 
-.form-tab form .form-tab-item {}
-
-.form-tab form .form-tab-item label {
-    font-weight: bold;
-    color: #222;
-    font-size: 12px;
+form section label {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 2rem;
+    margin: 20px;
 }
 
-.form-tab form .form-tab-item input[type="text"] {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    background-color: #fafafb;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    margin-bottom: 4px;
+input {
+    width: 80%;
     padding: 12px;
-    font-size: 16px;
+    background-color: #a6a6e92b;
+    color: #222;
+    font-size: 2rem;
+    border: 2px solid #999;
+    border-radius: 4px;
 }

@@ -4,4 +4,4 @@ A simple HTML5 form with tabs
 ## Run
 open index.html
 
-![Screenshot](https://i.postimg.cc/28zsYfp4/Capture-d-e-cran-2018-11-01-a-22-35-39.png)
+![screenshot](https://www.udrop.com/cache/plugins/filepreviewer/68418/dc6d985ece0144cb483d3abc6cbe08cd4b7a285a4a55699bde1f96512fd10585/1100x800_cropped.jpg)
